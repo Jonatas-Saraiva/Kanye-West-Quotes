@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
+import ApiGet from '../src/componets/provider/index';
+
+import * as S from './AppStylled';
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ 
+    <S.SectionEl>
+    <h1>Kanye West Quotes </h1>
+     <span>-Kanye say...</span>
+     <ApiGet/>
+    <S.ImgEl src='https://conteudo.imguol.com.br/c/entretenimento/b3/2021/07/28/ja-ouviu-a-palavra-de-kanye-west-hoje-1627502636532_v2_900x506.png'></S.ImgEl>
+    </S.SectionEl>
+   
+    
   );
 }
 
